@@ -1,0 +1,29 @@
+# 数据集配置
+train: /home/lvheng_bishe/data/humancar/datasets/train  # 训练集图像目录
+val: /home/lvheng_bishe/data/humancar/datasets/val   # 验证集图像目录
+
+# 类别
+nc: 22  # 类别数
+names: 
+  0: MediumBus
+  1: Bike
+  2: LargeBus
+  3: HeavyTruck
+  4: EngineTruck
+  5: BiCyclist
+  6: Truck
+  7: LightTruck
+  8: TricycleClosed
+  9: Pickup
+  10: Machineshop
+  11: TricycleOpenMotor
+  12: TricycleOpenHuman
+  13: OtherCar
+  14: Pedestrian
+  15: Car
+  16: MMcar
+  17: MotorCyclist
+  18: PersonSitting
+  19: van
+  20: Motorcycle
+  21: CampusBus
