@@ -2,7 +2,7 @@ import json
 import os
 
 # 加载 JSON 文件
-with open('/home/lvheng_bishe/data/humancar/datasets/annotations/val.json') as f:
+with open('/home/lvheng_bishe/data/humancar/datasets/annotations/test.json') as f:
     data = json.load(f)
 
 # 创建一个字典，将image_id映射到文件名
@@ -26,7 +26,7 @@ for ann in data['annotations']:
     height = bbox[3] / image_height
 
     # 创建或追加到txt文件
-    txt_path = os.path.join('/home/lvheng_bishe/data/humancar/datasets/val/labels/', os.path.splitext(file_name)[0] + '.txt')
+    txt_path = os.path.join('/home/lvheng_bishe/data/humancar/datasets/test/labels/', os.path.splitext(file_name)[0] + '.txt')
     with open(txt_path, 'a') as f:
         f.write(f'{category_id} {x_center} {y_center} {width} {height}\n')
     
